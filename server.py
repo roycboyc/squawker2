@@ -38,7 +38,7 @@ def close_connection(exception):
 # ------------------------------
 
 
-@app.route('/', methods=["POST","GET"])
+@app.route('/', methods=["POST"])
 def root():
     conn = get_db()
     cur=conn.cursor()
